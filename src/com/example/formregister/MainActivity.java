@@ -23,12 +23,15 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		btnRegister = (Button)findViewById(R.id.button1);
+		nama = (EditText)findViewById(R.id.editText1);
+		outputInformasi = (TextView) findViewById(R.id.textView1);
 		
 		btnRegister.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
+				
 				outputInformasi.setText("namamu adalah :"+nama.getText().toString());	
 				
 			}
